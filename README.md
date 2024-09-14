@@ -1,1 +1,1 @@
-# LCOF2477
+CSD 1103 Term Project
