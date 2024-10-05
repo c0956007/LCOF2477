@@ -56,12 +56,12 @@ img {
 footer p {
     font: 0.75em;
     text-align: center;
-    color: #fff;
+    color: #000000;
     padding: 0 1em;
 }
 
 footer p a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
