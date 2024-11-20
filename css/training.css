@@ -1,0 +1,49 @@
+/*
+    Author: Pargat Singh
+    Date: 19 November, 2024
+    File Name: training.css
+*/
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Responsive Styles */
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+
+    th,
+    td {
+        padding: 12px;
+    }
+}

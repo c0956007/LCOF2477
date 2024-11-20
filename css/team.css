@@ -1,0 +1,62 @@
+/*
+    Author: Pargat Singh
+    Date: 19 November, 2024
+    File Name: team.css
+*/
+
+/* Main Content Styles */
+main div {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+aside {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+    main div {
+        flex-direction: row;
+    }
+
+    section {
+        flex: 3;
+        margin-right: 20px;
+    }
+
+    aside {
+        flex: 1;
+    }
+
+    article {
+        display: flex;
+        align-items: center;
+    }
+
+    figure {
+        margin-right: 20px;
+    }
+
+    article p {
+        flex: 1;
+    }
+}

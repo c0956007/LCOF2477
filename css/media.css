@@ -1,0 +1,44 @@
+/*
+    Author: Pargat Singh
+    Date: 19 November, 2024
+    File Name: media.css
+*/
+
+/* Main Content Styles */
+main h2 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+audio,
+video {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+
+    audio,
+    video {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    audio,
+    video {
+        max-width: 70%;
+    }
+}

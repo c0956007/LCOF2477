@@ -1,148 +1,185 @@
 /*
-Author:
-Date:
-File Name: styles.css
+    Author: Pargat Singh
+    Date: 19 November, 2024
+    File Name: styles.css
 */
 
-/* CSS Reset */
-body,
-header,
-nav,
-main,
-footer,
-h1,
-div,
-img,
-ul {
+/* Reset default browser styles */
+* {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
-/* Style rules for body and images */
+/* Body Styles */
 body {
-    background-color: #1B3A4B;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/* Style rule for header */
+/* Header Styles */
 header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #1B3A4B;
-    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
 }
 
-header img {
-    margin: 0 auto;
-    height: 190px;
+header .logo {
+    max-width: 100px;
+    height: auto;
+    margin-right: 15px;
 }
 
-/* Style rules for navigation area */
+header h1 {
+    font-size: 1.8em;
+    color: #fff;
+    margin: 0;
+}
+
+.tab-desk {
+    display: none;
+}
+
+
+/* Navigation Styles */
 nav {
-    padding: 1%;
-    margin-bottom: 1%;
+    background-color: #333;
 }
 
 nav ul {
-    list-style-type: none;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-    font-size: 1.5em;
-    font-family: 'Roboto Slab', serif;
-    font-optical-sizing: auto;
-    border-top: 1px solid #fff;
+    margin: 5px 0;
 }
 
-nav li:first-child { 
-    border-top: none;
-}
-
-nav li a {
-    display: block;
+nav a {
     color: #fff;
-    padding: 0.5em 1em;
+    font-weight: bold;
+    padding: 10px 15px;
     text-decoration: none;
 }
 
-/* Style rules for main content */
+nav a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
 main {
-    clear: left;
     background-color: #fff;
-    padding: 2%;
-    font-size: 1.25em;
-    font-family: 'Roboto Slab', serif;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
 }
 
-.button{
-    color: #3A7CA5;
+main h2 {
+    font-size: 1.5em;
+    color: #4CAF50;
+    margin-bottom: 10px;
 }
 
-.action {
-    font-size: 1.35em;
-    color: #666600;
-    font-weight: bold;
+main p {
+    font-size: 1em;
+    margin-bottom: 15px;
 }
 
-#weights,
-#cardio,
-#training {
-    width: 29%;
-    float: left;
-    margin: 0 2%;
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-#exercises {
-    clear: left;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1% 2%;
-}
-
-#exercises dt {
-    font-weight: bold;
-}
-
-#exercises dd {
-    padding: 0.5% 1% 2% 0;
-}
-
-.external-link {
-    color: #666600;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#contact {
+/* Footer Styles */
+footer {
+    font-size: 0.8em;
     text-align: center;
+    color: #666;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
 }
 
-#contact a {
-    color: #666600;
-    text-decoration: none;
+footer a {
+    color: #4CAF50;
 }
 
-.map {
-    border: 8px solid #000;
-}
-
-/* Style rules for footer content */
 footer p {
-    font-size: 1.75em;
-    text-align: center;
-    color: #fff;
-    padding: 0 1em;
+    margin: 5px 0;
 }
 
-footer p a {
-    color: #fff;
-    text-decoration: none;
+/* Responsive Styles */
+
+/* Tablet Styles */
+@media (min-width: 600px) {
+    header .logo {
+        max-width: 120px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 10px;
+    }
+
+    main {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    main h2 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1.2em;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+    header .logo {
+        max-width: 150px;
+    }
+    
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .tab-desk {
+        display: inline;
+    }
+
+    nav a {
+        padding: 10px 20px;
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    main {
+        width: 60%;
+    }
 }

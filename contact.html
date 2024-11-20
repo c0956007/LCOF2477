@@ -1,59 +1,94 @@
 <!DOCTYPE html>
-<!-- This website template was created by: Student's First Name Student's Last Name -->
+<!--
+    Author: Pargat Singh
+    Student Id: C0956007
+    File Name: contact.html
+    Date: 19 November, 2024
+-->
 <html lang="en">
 
 <head>
-	<title>Cleanify</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initialscale=1">
-	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
-		rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Cleanify - Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
+    <header>
+        <img src="images/logo.png" alt="Cleanify Logo" class="logo">
+        <h1>Cleanify Vacuum Solutions</h1>
+    </header>
 
-	<div id="container">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
 
-		<!-- Use the header area for the website name or logo -->
-		<header>
-			<a href="index.html"><img src="images/cleanify-logo.png" alt="Cleanify Company Logo"></a>
-		</header>
+    <!-- Main content area -->
+    <main>
+        <h2>Contact Us</h2>
+        <ol>
+            <li>Please fill out the form below.</li>
+            <li>We will get back to you within 24 hours.</li>
+        </ol>
 
-		<!-- Use the nav area to add hyperlinks to other pages within the website -->
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="products.html">Products</a></li>
-				<li><a href="features.html">Features</a></li>
-				<li><a href="about.html">About Us</a></li>
-				<li><a href="faqs.html">FAQs</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-			</ul>
-		</nav>
+        <!-- Contact Form -->
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required autofocus>
 
-		<!-- Use the main area to add the main content of the webpage -->
-		<main>
-			<div id="contact">
-			
-				<h2>Ready to get started? Contact us today.</h2> 							
-				<h4>Call us: (814) 555-9608</h4>
-				<h4>Email us: <a href="mailto:support@cleanify.com">support@cleanify.com</a></h4>
-				<h4>Visit us at: 1275 Channel Center Street, Boston, MA 02210</h4>
-				
-				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.8517572084897!2d-71.05362748503984!3d42.34568384400281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7dc2b67e7b%3A0x36ec93427cd9c5f1!2sChannel+Center+St%2C+Boston%2C+MA+02210!5e0!3m2!1sen!2sus!4v1558137213400!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-			
-			</div>
-		</main>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
 
-		<!-- Use the footer area to add webpage footer content -->
-		<footer>
-			<p>&copy; Copyright 2021. All Rights Reserved.</p>
-			<p><a href="mailto:support@cleanify.com">support@cleanify.com</a></p>
-		</footer>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com">
 
-	</div>
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+            </fieldset>
 
+            <fieldset>
+                <legend>Product Interest</legend>
+                <label><input type="checkbox" name="product" value="UltraVac"> UltraVac 3000</label>
+                <label><input type="checkbox" name="product" value="CompactVac"> CompactVac</label>
+                <label><input type="checkbox" name="product" value="RoboVac"> RoboVac</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <label><input type="radio" name="contact_method" value="Email" required> Email</label>
+                <label><input type="radio" name="contact_method" value="Phone"> Phone</label>
+            </fieldset>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Enter your message here..."></textarea>
+
+            <label for="appointment">Preferred Appointment Date:</label>
+            <input type="date" id="appointment" name="appointment">
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        <p>
+            <a href="mailto:info@cleanify.com">info@cleanify.com</a>
+        </p>
+    </footer>
 </body>
 
 </html>
